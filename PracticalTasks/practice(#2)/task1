@@ -1,0 +1,8 @@
+alert(" 1.Веселий \n 2.Сумний \n 3.Обурений");
+var n = parseInt(prompt("Enter the number from 1 to 3:"));
+while(n < 1 || n > 3) n = prompt("Enter the number from 1 to 3:");
+switch(n){
+    case 1: alert("🙂"); break;
+    case 2: alert("🙁"); break;
+    case 3: alert("😤"); break;
+}
