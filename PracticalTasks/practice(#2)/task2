@@ -1,0 +1,3 @@
+var random_number1 = Math.floor(Math.random() * (6 - 1) + 1);
+var n = parseInt(prompt("Your answer?:"));
+if(random_number == n) alert("Yeah! Right!"); else alert("No, Wrong :(");
