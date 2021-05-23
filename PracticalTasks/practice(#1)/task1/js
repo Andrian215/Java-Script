@@ -1,0 +1,2 @@
+var n = prompt("Enter number:");
+alert("Number of full weeks in " + n + " days: " + Math.floor(n/7));
