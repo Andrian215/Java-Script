@@ -1,8 +1,0 @@
-var random_number, answer1, answer2;
-random_number = Math.floor(Math.random() * (11-1) + 1);
-answer1 = parseInt(prompt("First answer:"));
-answer2 = parseInt(prompt("Second answer:"));
-var difference1, difference2;
-difference1 = Math.abs(answer1 - random_number);
-difference2 = Math.abs(answer2 - random_number);
-if(difference1 < difference2) alert("First player won!"); else if(difference1 > difference2) alert("Second player won!"); else alert("Draw!");
