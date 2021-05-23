@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption id="caption"><h1>0 | 2 attempts</h1></caption>
+        <tr>
+            <td><button id="btn1" value="b1" onclick="RandomPosition(), TryToCatch1()">🐰</button></td>
+            <td><button id="btn2" value="b2" onclick="RandomPosition(), TryToCatch2()"></button></td>
+        </tr>
+        <tr>
+            <td><button id="btn3" value="b3" onclick="RandomPosition(), TryToCatch3()"></button></td>
+            <td><button id="btn4" value="b4" onclick="RandomPosition(), TryToCatch4()"></button></td>
+        </tr>
+    </table>
+    <script src="hi.js"></script>
+</body>
+</html>
