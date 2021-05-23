@@ -1,0 +1,5 @@
+  
+var n = prompt("Enter the number of months:");
+var years = Math.floor(n/12);
+var months = n % 12;
+alert(years + " years and " + months + " months");
