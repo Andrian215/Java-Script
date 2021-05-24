@@ -1,0 +1,25 @@
+function CreateTable(ii,jj){
+    var my_table = document.getElementById("mytable");
+    var table = document.createElement("table");
+
+    var table_body = document.createElement("tbody");
+    table.appendChild(table_body);
+    
+    for(var i = 0; i < ii; i++){
+        var tr = document.createElement("tr");
+        tr.appendChild(document.createTextNode("hi"));
+        table_body.appendChild(tr);
+    }
+    
+    for(var j = 0; j < jj; j++){
+        var td = document.createElement("td");
+        td.appendChild(document.createTextNode("hi"));
+        table_body.appendChild(td);
+    }
+
+    my_table.appendChild(table);
+}
+
+var i = parseInt(prompt("Number of rows:"));
+var j = parseInt(prompt("Number of columns:"));
+CreateTable(i,j);
