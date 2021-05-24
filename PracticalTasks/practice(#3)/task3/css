@@ -1,0 +1,6 @@
+table, tr, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
