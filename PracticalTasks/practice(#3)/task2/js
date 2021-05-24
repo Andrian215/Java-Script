@@ -1,0 +1,30 @@
+function GetSum(n1,n2,n3,n4){
+    var sum = n1 + n2 + n3 + n4;
+    return sum;
+}
+function GetProduct(n1,n2,n3,n4){
+    var product = n1 * n2 * n3 * n4;
+    return product;
+}
+function GetAverageValue(n1,n2,n3,n4){
+    var average_value = (n1 + n2 + n3 + n4)/4;
+    return average_value;
+}
+function GetMinimalValue(n1,n2,n3,n4){
+    var minimal_value;
+    if(n1 <= n2 && n1 <= n3 && n1 <= n4) minimal_value =n1;
+    else if(n2 <= n1 && n2 <= n3 && n2 <= n4) minimal_value = n2;
+    else if(n3 <= n1 && n3 <= n2 && n3 <= n4) minimal_value = n3;
+    else minimal_value = n4;
+    return minimal_value;
+}
+var i = 0;
+var numbers = [];
+while(i < 4){
+    numbers[i] = parseInt(prompt("Number " + i +":"));
+    i++;
+}
+console.log(GetSum(numbers[0],numbers[1],numbers[2],numbers[3]));
+console.log(GetProduct(numbers[0],numbers[1],numbers[2],numbers[3]));
+console.log(GetAverageValue(numbers[0],numbers[1],numbers[2],numbers[3]));
+console.log(GetMinimalValue(numbers[0],numbers[1],numbers[2],numbers[3]));
