@@ -1,0 +1,24 @@
+function RandomImage(src1,src2,src3,src4){
+    var div = document.getElementById("div");
+    var image_1, image_2, image_3, image_4, random;
+    image_1 = new Image();
+    image_2 = new Image();
+    image_3 = new Image();
+    image_4 = new Image();
+
+    image_1.src = src1;
+    image_2.src = src2;
+    image_3.src = src3;
+    image_4.src = src4;
+
+    random = Math.floor(Math.random() * (5 - 1) + 1);
+    if(random == 1) div.appendChild(image_1);
+    else if(random == 2) div.appendChild(image_2);
+    else if(random == 3) div.appendChild(image_3);
+    else div.appendChild(image_4);
+}
+var src1 = 'https://st4.depositphotos.com/1020804/21355/i/600/depositphotos_213558710-stock-photo-blue-paper-texture-gradient-gradient.jpg';
+var src2 = 'https://static4.depositphotos.com/1003478/350/i/600/depositphotos_3501278-stock-photo-green-background.jpg';
+var src3 = 'https://klike.net/uploads/posts/2019-11/1572780433_9.jpg';
+var src4 = 'https://i.pinimg.com/originals/43/22/5a/43225aba74ba46ba733f83ec5084e73d.jpg';
+RandomImage(src1,src2,src3,src4);
